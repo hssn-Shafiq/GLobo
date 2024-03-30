@@ -1,12 +1,11 @@
 #myCarousel {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .card-body {
   padding: 0px !important;
-  height: 400px;
+  height: 300px;
   margin-left: 10px;
   border: none;
-
 }
 .img-fluid {
   max-width: 100%;
@@ -14,14 +13,14 @@
   object-fit: cover;
   display: flex;
   border-radius: 10px;
-  border: none;  
-  transition: transform 0.6s ease-in-out ;
+  border: none;
+  transition: transform 0.6s ease-in-out;
 }
-.img-fluid:hover{
-    transform: scale(1.1); 
-  transition-delay: -.2s;
-    
+.img-fluid:hover {
+  transform: scale(1.1);
+  transition-delay: -0.2s;
 }
+
 @media (max-width: 768px) {
   .carousel-inner .carousel-item > div {
     display: none;
@@ -62,4 +61,18 @@
   .carousel-item-prev:not(.carousel-item-end) {
     transform: translateX(-25%) !important;
   }
+}
+.Releases {
+  width: 29%;
+}
+.Releases_1 {
+  width: 50%;
+}
+.title {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  width: fit-content;
+  margin-top: -30px;
 }
