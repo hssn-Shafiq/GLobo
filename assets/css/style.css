@@ -165,6 +165,38 @@ body {
 .header-main .navbar .navbar-text a:hover {
     border-bottom: 2px solid var(--item-hover-color);
 }
+@media (max-width: 990px){
+    .header-main .navbar .nav-item form {
+   
+        input {
+            width: 280px;
+    
+        }
+    }
+}
+@media (max-width: 780px) {
+    .header-main .navbar {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .header-main .navbar .navbar-brand {
+        margin-right: 0px;
+
+        img {
+            width: 80px;
+        }
+    }
+    .navbar-collapse{
+        width: 100%;
+        background: #030303;
+        padding: 20px;
+    } 
+    .header-main .navbar .navbar-nav .nav-item .nav-link{
+        width: fit-content;
+    }
+    
+}
 
 /* *******************************
        Header Section Ends
@@ -176,18 +208,18 @@ body {
 .header-carousel {
     margin-top: 60px;
 
-    .carousel-item{
+    .carousel-item {
         height: 450px;
-        background: black !important;
 
-        .overlay{
+        .overlay {
             position: absolute;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.443);
         }
     }
-    .carousel-indicators button{
+
+    .carousel-indicators button {
         width: 15px !important;
         height: 15px !important;
         border-radius: 50%;
@@ -269,6 +301,87 @@ body {
         }
     }
 }
+
+@media (max-width: 850px) {
+
+    .header-carousel {
+        margin-top: 85px;
+
+        .carousel-item {
+            height: 350px;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .header-carousel .carousel-caption {
+        top: 25%;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .header-carousel {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-carousel {
+        margin-top: 70px;
+
+        .carousel-item {
+            height: 250px;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .header-carousel .carousel-caption {
+        top: 20%;
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .category {
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+
+        .launch_date {
+            margin-left: 4px;
+        }
+
+        .buttons {
+            margin-top: 22px;
+            gap: 1rem;
+
+            .trailer {
+                width: 100%;
+                max-width: 67px;
+                height: 30px;
+            }
+
+            .wishlist {
+                max-width: 31px;
+                font-size: 20px;
+                height: 30px;
+            }
+
+            .more_detail {
+                font-size: 0.7rem;
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
 /* *******************************
     Header Carousel Section ends
 **********************************/
@@ -276,4 +389,3 @@ body {
 /* *******************************
     Movies SLider Section Starts
 **********************************/
-

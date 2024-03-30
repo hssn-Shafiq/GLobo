@@ -25,13 +25,15 @@
 
   <body>
     <header class="header-main">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid justify-content-evenly">
-          <a class="navbar-brand" href="index.html">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div
+          class="container-fluid justify-content-between justify-content-lg-evenly p-0"
+        >
+          <a class="navbar-brand ps-4 ps-md-0" href="index.html">
             <img src="assets/images/logo-trans.png" width="100" alt="" />
           </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler me-4"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -43,6 +45,13 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item d-block d-md-none">
+                <a href="#" class="nav-link">
+                  <button class="btn btn-outline-primary text-light">
+                    Login
+                  </button></a
+                >
+              </li>
               <li class="nav-item dropdown" id="language-dropdown">
                 <a class="nav-link" href="#" role="button" aria-expanded="false"
                   >Language
@@ -67,7 +76,9 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="about.html">About</a>
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >About</a
+                >
               </li>
               <li class="nav-item dropdown" id="content-dropdown">
                 <a class="nav-link" href="#" role="button" aria-expanded="false"
@@ -79,11 +90,17 @@
                   <li><a class="dropdown-item" href="#">New-Release</a></li>
                   <li><a class="dropdown-item" href="#">Telenovela</a></li>
                   <li><a class="dropdown-item" href="#">Series</a></li>
-                  <li><a class="dropdown-item" href="#">Documentary Series</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Documentary Series</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Docs</a></li>
                   <li><a class="dropdown-item" href="#">Kids</a></li>
-                  <li><a class="dropdown-item" href="#">Factual-Lifestyle</a></li>
-                  <li><a class="dropdown-item" href="#">Unscripted Formats</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Factual-Lifestyle</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Unscripted Formats</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Films</a></li>
                   <li><a class="dropdown-item" href="#">Pagina-About</a></li>
                 </ul>
@@ -107,7 +124,7 @@
               </li>
             </ul>
           </div>
-          <span class="navbar-text">
+          <span class="navbar-text d-none d-lg-block">
             <a href="">login</a>
           </span>
         </div>
@@ -116,19 +133,46 @@
     <!-- ============================
                 Header close
     ================================ -->
-    <!-- ============================
-                Main Body Start
-    ================================ -->
     <main>
+      <!-- ============================
+              Header Carosuel Start
+        ================================ -->
       <div class="header-carousel">
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
+            <button
+              type="button"
+              data-bs-target="#carouselId"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselId"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselId"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselId"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselId"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <div class="overlay"></div>
@@ -139,12 +183,12 @@
               />
               <div class="carousel-caption d-none d-md-block">
                 <h1 class="title">Crossed Paths</h1>
-                <span class="category">TELENOVELA
+                <span class="category"
+                  >TELENOVELA
                   <span class="launch_date">• Launched in 2023</span></span
                 >
                 <div class="buttons">
-                  <button class="trailer">
-                    Trailer</button
+                  <button class="trailer">Trailer</button
                   ><button class="wishlist">
                     <svg
                       stroke="currentColor"
@@ -162,16 +206,12 @@
                         d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
                       ></path>
                     </svg></button
-                  ><a
-                    class="more_detail"
-                    href=""
-                    >See details</a
-                  >
+                  ><a class="more_detail" href="">See details</a>
                 </div>
               </div>
             </div>
             <!-- item 2 -->
-             <div class="carousel-item ">
+            <div class="carousel-item">
               <div class="overlay"></div>
               <img
                 src="assets/images/Movies/land-desire.jpg"
@@ -180,12 +220,12 @@
               />
               <div class="carousel-caption d-none d-md-block">
                 <h1 class="title">Land of Desire</h1>
-                <span class="category">TELENOVELA
+                <span class="category"
+                  >TELENOVELA
                   <span class="launch_date">• Launched in 2023</span></span
                 >
                 <div class="buttons">
-                  <button class="trailer">
-                    Trailer</button
+                  <button class="trailer">Trailer</button
                   ><button class="wishlist">
                     <svg
                       stroke="currentColor"
@@ -203,16 +243,12 @@
                         d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
                       ></path>
                     </svg></button
-                  ><a
-                    class="more_detail"
-                    href=""
-                    >See details</a
-                  >
+                  ><a class="more_detail" href="">See details</a>
                 </div>
               </div>
-            </div> 
+            </div>
             <!-- item 3 -->
-             <div class="carousel-item ">
+            <div class="carousel-item">
               <div class="overlay"></div>
               <img
                 src="assets/images/Movies/vicky-mouse.jpg"
@@ -220,13 +256,13 @@
                 alt="First slide"
               />
               <div class="carousel-caption d-none d-md-block">
-                <h1 class="title">Vicky And The Muse </h1>
-                <span class="category">SERIES 
+                <h1 class="title">Vicky And The Muse</h1>
+                <span class="category"
+                  >SERIES
                   <span class="launch_date">• Launched in 2023</span></span
                 >
                 <div class="buttons">
-                  <button class="trailer">
-                    Trailer</button
+                  <button class="trailer">Trailer</button
                   ><button class="wishlist">
                     <svg
                       stroke="currentColor"
@@ -244,16 +280,12 @@
                         d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
                       ></path>
                     </svg></button
-                  ><a
-                    class="more_detail"
-                    href=""
-                    >See details</a
-                  >
+                  ><a class="more_detail" href="">See details</a>
                 </div>
               </div>
-            </div> 
+            </div>
             <!-- item4 -->
-             <div class="carousel-item ">
+            <div class="carousel-item">
               <div class="overlay"></div>
               <img
                 src="assets/images/Movies/razor.jpg"
@@ -262,12 +294,12 @@
               />
               <div class="carousel-caption d-none d-md-block">
                 <h1 class="title">Living On A Razor's Edge</h1>
-                <span class="category">SERIES
+                <span class="category"
+                  >SERIES
                   <span class="launch_date">• Launched in 2023</span></span
                 >
                 <div class="buttons">
-                  <button class="trailer">
-                    Trailer</button
+                  <button class="trailer">Trailer</button
                   ><button class="wishlist">
                     <svg
                       stroke="currentColor"
@@ -285,16 +317,12 @@
                         d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
                       ></path>
                     </svg></button
-                  ><a
-                    class="more_detail"
-                    href=""
-                    >See details</a
-                  >
+                  ><a class="more_detail" href="">See details</a>
                 </div>
               </div>
-            </div> 
+            </div>
             <!-- iterm 5 -->
-             <div class="carousel-item ">
+            <div class="carousel-item">
               <div class="overlay"></div>
               <img
                 src="assets/images/Movies/xuxa.webp"
@@ -303,12 +331,12 @@
               />
               <div class="carousel-caption d-none d-md-block">
                 <h1 class="title">Xuxa, A Life On TV</h1>
-                <span class="category">DOCUMENTARY SERIES
+                <span class="category"
+                  >DOCUMENTARY SERIES
                   <span class="launch_date">• Launched in 2023</span></span
                 >
                 <div class="buttons">
-                  <button class="trailer">
-                    Trailer</button
+                  <button class="trailer">Trailer</button
                   ><button class="wishlist">
                     <svg
                       stroke="currentColor"
@@ -326,22 +354,17 @@
                         d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
                       ></path>
                     </svg></button
-                  ><a
-                    class="more_detail"
-                    href=""
-                    >See details</a
-                  >
+                  ><a class="more_detail" href="">See details</a>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
-         
         </div>
       </div>
-
-      <section>
-
-      </section>
+      <!-- ============================
+              Card Carosuel Start
+        ================================ -->
+     
     </main>
 
     <footer>
@@ -360,7 +383,5 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-
-
   </body>
 </html>
